@@ -1,0 +1,66 @@
+.main-nav {
+  position: relative;
+}
+.main-nav__toggle {
+  position: absolute;
+  display: block;
+  border: none;
+  background: #6a4d38;
+  right: 55px;
+  top: -60px;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  width: 36px;
+  height: 2px;
+  background-color: #111111;
+  box-shadow: 0 8px 0 0 #111111, 0 16px 0 0 #111111;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #111111;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+}
