@@ -1,0 +1,134 @@
+.stats {
+  background: #EAEAEA;
+  padding: 20px 0 0 0;
+}
+.stats__wrapper {
+  margin: 0 20px;
+  padding-bottom: 33px;
+}
+.stats__title {
+  font-weight: normal;
+  font-size: 36px;
+  color: #000000;
+  margin: 0 0 27px 0;
+}
+.stats__intro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0 -1px 25px;
+}
+.stats__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+};
+.stats__item {
+  width: 48%;
+}
+.stats__item-value {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px 5px;
+
+}
+.stats__item-comment {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: -15px 20px 0;
+  padding: 0 15px;
+  background: #EAEAEA;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+}
+.stats__text {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 42px;
+}
+.stats__image-block {
+  width: 311px;
+  height: 232px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 30px;
+}
+.stats__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 311px;
+  height: 240px;
+
+  &--fat {
+    background-image: url('../img/big-cat.png');
+    background-position: -19px 0;
+    z-index: 10;
+    transition: 2s all;
+  }
+
+  &--slim {
+    background-image: url('../img/cat-skinny.png');
+    width: 251px;
+    height: 240px;
+    background-position: 18px 0;
+    z-index: 1;
+  }
+}
+.stats__wrapper--slim .stats__image--fat {
+  width: 0;
+}
+
+.stats__comparison {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 39px 0 43px;
+}
+.stats__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+.stats__mode-bar {
+  position: relative;
+  width: 84px;
+  height: 12px;
+  border: 1px solid grey;
+  border-radius: 17px;
+  background-color: #FFFFFF;
+}
+.stats__mode-indicator {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background: rgb(44, 134, 44);
+  top: 2px;
+  left: 8px;
+  right: 8px;
+}
+.stats__wrapper--slim .stats__mode-indicator {
+  left: auto;
+  right: 8px;
+}
