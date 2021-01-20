@@ -2,195 +2,188 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="#" class="page-header__logo">
-        <!--
-        <img class="page-header__image" src="img/logo-energy.png" width="101" height="18" alt="Cat Energy">
-        <img src="img/logo-tablet.png" alt="">-->
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
           <img class="page-header__img" src="img/logo.png" width="186" height="38" alt="Cat">
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
       </nav>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Основные товары</h1>
-    <section class="catalog">
-      <div class="catalog__wrapper">
-        <h2 class="catalog__title">Каталог продукции</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img src="" alt="Cat pro energy" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy PRO 500 г</p>
+    <section class="catalogs">
+      <div class="catalogs__container">
+        <h2 class="catalogs__title">Каталог продукции</h2>
+        <ul class="catalogs__list">
+          <li class="catalogs__item">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/yellow.svg" alt="Cat pro energy" class="catalogs__image">
             </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
+            <div class="catalogs__content">
+              <h3 class="catalogs__name">Cat Energy<br> PRO 500 г</h3>
+                <table class="catalogs__table">
+                  <tr>
+                    <td class="params">Масса</td><td class="values"> 500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Вкус</td><td>Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Цена</td><td class="values">700 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <a class="catalogs__button catalogs__button-block" href="#">Заказать</a>
+          </li>
+          <li class="catalogs__item catalogs__item-block">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/yellow-big.svg" alt="" class="catalogs__image catalogs__image-block">
+            </div>
+            <div class="catalogs__content ">
+              <h3 class="catalogs__name">Cat Energy<br> PRO 1000 г</h3>
+              <table class="catalogs__table">
+                <tr>
+                  <td class="params">Масса</td><td> 1000 г</td>
                 </tr>
-                <tr class="values">
-                  <td>500 г</td>
-                  <td>Курица</td>
-                  <td>700 Р.</td>
+                <tr>
+                  <td class="params">Вкус</td><td>Курица</td>
+                </tr>
+                <tr>
+                  <td class="params">Цена</td><td>1000 Р.</td>
                 </tr>
               </table>
             </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
+            <a href="#" class="catalogs__button catalogs__button-block">Заказать</a>
           </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy PRO 1000 г</p>
+          <li class="catalogs__item catalogs__item-table">
+            <div class="catalogs__image-container catalogs__image-wrapper">
+              <img src="img/catalog/green.svg" alt="" class="catalogs__image">
             </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
+            <div class="catalogs__content">
+              <h3 class="catalogs__name catalogs__name-title">Cat Energy<br> PRO 500 г</h3>
+                <table class="catalogs__table">
+                  <tr>
+                    <td class="params">Масса</td><td class="values"> 500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Вкус</td><td>Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Цена</td><td>700 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <a href="#" class="catalogs__button">Заказать</a>
+          </li>
+          <li class="catalogs__item catalogs__item-block">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/green-big.svg" alt="" class="catalogs__image">
+            </div>
+            <div class="catalogs__content catalogs__content-block">
+              <h3 class="catalogs__name">Cat Energy<br>PRO 1000 г</h3>
+                <table class="catalogs__table">
+                  <tr>
+                    <td class="params">Масса</td><td> 1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Вкус</td><td>Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="params">Цена</td><td>1000 Р.</td>
+                  </tr>
+                </table>
+            </div>
+            <a href="#" class="catalogs__button catalogs__button--ative">Заказать</a>
+          </li>
+          <li class="catalogs__item">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/blue.svg" alt="" class="catalogs__image">
+            </div>
+            <div class="catalogs__content">
+              <h3 class="catalogs__name">Cat Energy<br>slim 500 г</h3>
+              <table class="catalogs__table">
+                <tr>
+                  <td class="params">Масса</td><td class="values"> 500 г</td>
                 </tr>
-                <tr class="values">
-                  <td>1000 г</td>
-                  <td>Курица</td>
-                  <td>1000 Р.</td>
+                <tr>
+                  <td class="params">Вкус</td><td>Гречка</td>
+                </tr>
+                <tr>
+                  <td class="params">Цена</td><td>400 Р.</td>
                 </tr>
               </table>
             </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
+            <a href="#" class="catalogs__button catalogs__button--ative">Заказать</a>
           </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy PRO 500 г</p>
+          <li class="catalogs__item catalogs__item-block">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/blue-big.svg" alt="" class="catalogs__image">
             </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
+            <div class="catalogs__content">
+              <h3 class="catalogs__name">Cat Energy<br>slim 1000 г</h3>
+              <table class="catalogs__table">
+                <tr>
+                  <td class="params">Масса</td><td class="values">1000 г</td>
                 </tr>
-                <tr class="values">
-                  <td>500 г</td>
-                  <td>Рыба</td>
-                  <td>700 Р.</td>
+                <tr>
+                  <td class="params">Вкус</td><td>Гречка</td>
+                </tr>
+                <tr>
+                  <td class="params">Цена</td><td>700 Р.</td>
                 </tr>
               </table>
             </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
+            <a href="#" class="catalogs__button catalogs__button--ative">Заказать</a>
           </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy PRO 1000 г</p>
+          <li class="catalogs__item">
+            <div class="catalogs__image-container">
+              <img src="img/catalog/violet.svg" alt="" class="catalogs__image">
             </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
+            <div class="catalogs__content">
+              <h3 class="catalogs__name">Cat Energy<br>slim 500 г</h3>
+              <table class="catalogs__table">
+                <tr>
+                  <td class="params">Масса</td><td class="values">500 г</td>
                 </tr>
-                <tr class="values">
-                  <td>1000 г</td>
-                  <td>Рыба</td>
-                  <td>1000 Р.</td>
+                <tr>
+                  <td class="params">Вкус</td><td>Рис</td>
+                </tr>
+                <tr>
+                  <td class="params">Цена</td><td>500 Р.</td>
                 </tr>
               </table>
             </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
+            <a href="#" class="catalogs__button catalogs__button--ative">Заказать</a>
           </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy slim 500 г</p>
-            </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
-                </tr>
-                <tr class="values">
-                  <td>500 г</td>
-                  <td>Гречка</td>
-                  <td>400 Р.</td>
-                </tr>
-              </table>
-            </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
-          </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy slim 1000 г</p>
-            </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
-                </tr>
-                <tr class="values">
-                  <td>1000 г</td>
-                  <td>Гречка</td>
-                  <td>700 Р.</td>
-                </tr>
-              </table>
-            </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
-          </li>
-          <li class="catalog__item">
-            <img src="" alt="" class="catalog__image">
-            <div class="catalog__block">
-              <p class="catalog__subtitle">Cat Energy slim 500 г</p>
-            </div>
-            <div class="catalog__content">
-              <table class="catalog__table">
-                <tr class="params">
-                  <th>Масса</th>
-                  <th>Вкус</th>
-                  <th>Цена</th>
-                </tr>
-                <tr class="values">
-                  <td>500 г</td>
-                  <td>Рис</td>
-                  <td>500 Р.</td>
-                </tr>
-              </table>
-            </div>
-            <button type="button" class="catalog__button catalog__button--ative">Заказать</button>
-          </li>
-          <li class="catalog__item">
-            <div class="catalog__plus"></div>
-            <h3 class="catalog__subtitle--all">Показать еще 100500 товаров</h3>
-            <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__button catalog__button--focus">Показать все</button>
+          <li class="catalogs__item catalogs__item-plus">
+            <div class="catalogs__plus"></div>
+            <p class="catalogs__subtitle">Показать еще 100500 товаров</p>
+            <p class="catalogs__text">На самом деле вкусов гораздо больше!</p>
+            <a class="catalogs__button catalogs__button-show">Показать все</a>
           </li>
         </ul>
       </div>
@@ -198,47 +191,43 @@
     <section class="product">
       <h2 class="visually-hidden">Остальные товары</h2>
       <div class="product__wrapper">
-        <h3 class="product__title">Дополнительные товары</h3>
+        <h3 class="product__title">Дополнительные товары<span class="product__title-line"></span></h3>
         <ul class="product__list">
           <li class="product__item">
             <p class="product__subtitle">Сахарозаменитель</p>
             <table class="product__table">
               <tr class="product__info">
-                <td>1 упаковка (100 г)</td>
-                <td>200 Р.</td>
+                <td class="la">1 упаковка (100 г)</td><td>200 Р.</td>
               </tr>
             </table>
-            <button type="button" class="product__button product__button--ative">Заказать</button>
+            <a href="#" class="product__button product__button--ative">Заказать</a>
           </li>
           <li class="product__item">
             <p class="product__subtitle">питьевая вода</p>
             <table class="product__table">
               <tr class="product__info">
-                <td>5 литров</td>
-                <td>50 Р.</td>
+                <td>5 литров</td><td>50 Р.</td>
               </tr>
             </table>
-            <button type="button" class="product__button product__button--ative">Заказать</button>
+            <a href="#" class="product__button product__button--ative">Заказать</a>
           </li>
           <li class="product__item">
             <p class="product__subtitle">молоко</p>
             <table class="product__table">
               <tr class="product__info">
-                <td>1 литр</td>
-                <td>100 Р.</td>
+                <td>1 литр</td><td>100 Р.</td>
               </tr>
             </table>
-            <button type="button" class="product__button product__button--ative">Заказать</button>
+            <a href="#" class="product__button product__button--ative">Заказать</a>
           </li>
           <li class="product__item">
             <p class="product__subtitle">витамины</p>
             <table class="product__table">
               <tr class="product__info">
-                <td>1 упаковка (30 г)</td>
-                <td>300 Р.</td>
+                <td>1 упаковка (30 г)</td><td>300 Р.</td>
               </tr>
             </table>
-            <button type="button" class="product__button product__button--ative">Заказать</button>
+            <a href="#" class="product__button product__button--ative">Заказать</a>
           </li>
         </ul>
       </div>

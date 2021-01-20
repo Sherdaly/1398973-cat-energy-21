@@ -22,32 +22,33 @@
 .footer-item {
  display: block;
 }
-.footer__vk::before {
-  content: "";
+
+.footer__vk {
   display: block;
-  background: url('../../img/icon_vkontakte.svg') no-repeat top center;
   width: 23px;
   height: 16px;
-  background-color: none;
+  fill: #666666;
 
 }
-.footer__instagram::before {
-  content: "";
+.footer__instagram {
   display: block;
-  background: url('../../img/icon_instagram.svg') no-repeat top center;
   width: 16px;
   height: 16px;
-  background-color: none;
+  fill: #666666;
 
 }
-.footer__facebook::before {
-  content: "";
+.footer__facebook {
   display: block;
-  background: url('../../img/icon_facebook.svg') no-repeat top center;
   width: 22px;
   height: 22px;
-  background-color: none;
 
+}
+.footer__item:hover .footer__item-i {
+  fill: #68B738;
+}
+.footer__item:active .footer__item-i {
+  fill: #68B738;
+  opacity: 2;
 }
 .footer__list {
   list-style: none;
