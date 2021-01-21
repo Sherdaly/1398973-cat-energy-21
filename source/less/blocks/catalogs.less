@@ -44,6 +44,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -60,10 +61,10 @@
   padding: 21px 0 71px;
 
   @media (min-width: @tablet-width) {
+    display: block;
     background: #F2F2F2;
-    flex-direction: column;
     border: none;
-    max-width: 324px;
+    width: 48%;
 
   }
 
@@ -90,6 +91,10 @@
 .catalogs__image-container {
   width: 50%;
   min-height: 116px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 .catalogs__image {
   padding-left: 57px;

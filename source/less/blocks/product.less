@@ -19,10 +19,15 @@
   text-align: center;
   color: #000000;
   margin: 24px 54px 0 0;
-}
-.product__title-line {
-  border-bottom: 2px solid green;
-  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #CDCDCD;
+    width: 282px;
+    position: absolute;
+    top: 59px;
+  }
 }
 .product__list {
   display: block;
@@ -42,14 +47,16 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #222222;
-  margin: 46px 0 4px 3px;
+  margin: 45px 0 4px 3px;
 }
 .product__table {
   font-family: Arial;
   font-weight: normal;
   font-size: 14px;
   color: #444444;
-  min-height: 22px;
+  min-height: 55px;
+  padding-bottom: 32px;
+  width: 100%;
 }
 .la {
   text-align: left;
